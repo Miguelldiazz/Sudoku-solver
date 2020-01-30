@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sudoku solver</title>
+</head>
+<body>
+
+    {% for row in board %}
+        {% for x in row %}
+            {% if x == 0 %}
+                <input type="int">
+            {% else %}
+                {{x}}
+            {% endif %}
+        {% endfor %}
+        <br>
+    {% endfor %}
+    
+</body>
+</html>
